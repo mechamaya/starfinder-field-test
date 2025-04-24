@@ -402,6 +402,29 @@
           "item:id:{item|id}"
         ],
         "domain": "{item|id}-damage"
+      },
+      {
+        "key": "RollOption",
+        "option": "two-hand-twin-solar-weapon",
+        "label": "SF2E.SpecificRule.Solarian.SolarWeapon.TwinTwoHanded",
+        "toggleable": true,
+        "value": false,
+        "predicate": [
+          "solar-weapon-twin-trait-one:two-hand-d10"
+        ]
+      },
+      {
+        "selectors": [
+          "solar-weapon-twin-damage"
+        ],
+        "key": "DamageAlteration",
+        "mode": "override",
+        "property": "dice-faces",
+        "value": 10,
+        "predicate": [
+          "two-hand-twin-solar-weapon",
+          "dice:slug:base"
+        ]
       }
     ],
     "slug": "effect-solar-weapon-twin",
@@ -458,7 +481,7 @@
     "duplicateSource": null,
     "coreVersion": "12.331",
     "systemId": "pf2e",
-    "systemVersion": "6.8.5"
+    "systemVersion": "6.11.1"
   },
   "_id": "IHp2EZvBMcumn6Hf",
   "sort": 3300000,

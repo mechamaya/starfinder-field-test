@@ -414,6 +414,29 @@
           "item:id:{item|id}"
         ],
         "domain": "{item|id}-damage"
+      },
+      {
+        "key": "RollOption",
+        "option": "two-hand-solar-weapon",
+        "label": "SF2E.SpecificRule.Solarian.SolarWeapon.TwoHanded",
+        "toggleable": true,
+        "value": false,
+        "predicate": [
+          "solar-weapon-trait-one:two-hand-d10"
+        ]
+      },
+      {
+        "selectors": [
+          "solar-weapon-damage"
+        ],
+        "key": "DamageAlteration",
+        "mode": "override",
+        "property": "dice-faces",
+        "value": 10,
+        "predicate": [
+          "two-hand-solar-weapon",
+          "dice:slug:base"
+        ]
       }
     ],
     "slug": "effect-solar-weapon",
@@ -470,7 +493,7 @@
     "duplicateSource": null,
     "coreVersion": "12.331",
     "systemId": "pf2e",
-    "systemVersion": "6.8.5"
+    "systemVersion": "6.11.1"
   },
   "_id": "lUZuBzMe0UAllDxX",
   "sort": 3500000,

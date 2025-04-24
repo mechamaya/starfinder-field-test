@@ -536,7 +536,9 @@
                     },
                     "PhotonAttuned": {
                         "Label": "Photon-Attuned"
-                    }
+                    },
+                    "TwoHanded": "Use Solar Weapon Two-Handed",
+                    "TwinTwoHanded": "Use Twin Solar Weapon Two-Handed"
                 }
             },
             "Soldier": {
